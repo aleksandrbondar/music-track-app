@@ -24,6 +24,7 @@ This project utilizes a monorepo-like structure with separate `frontend` and `ba
 
 ## Project Structure
 
+```text
 music-tracks-app/
 ├── backend/         # Node.js (Fastify) backend application
 │   ├── data/        # Runtime data storage (track JSON files, uploads)
@@ -35,9 +36,10 @@ music-tracks-app/
 │   ├── src/         # Frontend source code (TypeScript, SCSS)
 │   ├── Dockerfile   # (Optional - for Docker setup)
 │   └── package.json # Frontend dependencies and scripts
-├── .env             # (Optional - if root needs env vars)
+├── .env             # (Optional - root env vars, e.g. for concurrently)
 ├── package.json     # Root dependencies (like concurrently) and main scripts
 └── README.md        # This file
+```
 
 ## Technology Stack
 
