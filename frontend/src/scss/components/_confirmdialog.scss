@@ -1,0 +1,22 @@
+.confirm-dialog-content {
+  margin-bottom: $spacing-lg;
+
+  p {
+    margin-bottom: $spacing-sm;
+
+    &:last-child {
+      margin-bottom: 0;
+      font-style: italic;
+      color: $dark-gray;
+      font-size: 0.9em;
+    }
+  }
+}
+
+.confirm-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-sm;
+  padding-top: $spacing-md;
+  border-top: 1px solid $border-color;
+}

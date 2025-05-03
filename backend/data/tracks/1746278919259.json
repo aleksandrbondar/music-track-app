@@ -1,0 +1,15 @@
+{
+  "title": "Comatose",
+  "artist": "Skillet",
+  "album": "",
+  "genres": [
+    "Rock",
+    "Pop"
+  ],
+  "coverImage": "https://c.media-amazon.com/images/I/81Bvk-ayKGL._SL1448_.jpg",
+  "slug": "comatose",
+  "id": "1746278919259",
+  "createdAt": "2025-05-03T13:28:39.259Z",
+  "updatedAt": "2025-05-03T13:30:45.952Z",
+  "audioFile": "1746278919259.mp3"
+}

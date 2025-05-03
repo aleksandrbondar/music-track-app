@@ -1,0 +1,28 @@
+[data-testid="loading-indicator"],
+[data-testid="loading-tracks"] {
+  padding: $spacing-xl;
+  text-align: center;
+  color: $dark-gray;
+  font-style: italic;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid $light-gray;
+    border-top-color: $primary-color;
+    border-radius: 50%;
+    animation: page-spinner 0.8s linear infinite;
+  }
+}
+
+@keyframes page-spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

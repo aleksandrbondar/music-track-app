@@ -1,0 +1,74 @@
+.genre-tag {
+  background-color: $medium-gray;
+  color: $background-color;
+  padding: 2px $spacing-sm;
+  border-radius: 10px;
+  font-size: 0.8em;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.genre-tags-input {
+  label {
+    display: block;
+    margin-bottom: $spacing-xs;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+
+  .selected-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+    min-height: 40px;
+    margin-bottom: $spacing-sm;
+    padding: $spacing-sm;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+
+    .no-genres {
+      font-style: italic;
+      color: $dark-gray;
+      font-size: 0.9em;
+    }
+
+    .genre-tag {
+      background-color: darken($medium-gray, 10%);
+    }
+  }
+
+  .remove-genre-button {
+    background: none;
+    border: none;
+    color: $background-color;
+    margin-left: $spacing-xs;
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.3em;
+    line-height: 1;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+      color: lighten($error-color, 10%);
+    }
+  }
+
+  .add-genre-controls {
+    display: flex;
+    gap: $spacing-sm;
+
+    select {
+      flex-grow: 1;
+    }
+
+    button {
+      padding: $spacing-sm;
+      font-size: 0.9em;
+      flex-shrink: 0;
+    }
+  }
+}

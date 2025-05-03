@@ -1,0 +1,80 @@
+.form-group {
+  margin-bottom: $spacing-md;
+
+  label {
+    display: block;
+    margin-bottom: $spacing-xs;
+    font-weight: 600;
+    font-size: 0.9em;
+  }
+
+  input[type="text"],
+  input[type="url"],
+  input[type="file"],
+  select,
+  textarea {
+    width: 100%;
+    padding: $spacing-sm $spacing-md;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    background-color: white;
+    font-size: 1em;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px lighten($primary-color, 35%);
+    }
+
+    &:disabled {
+      background-color: $light-gray;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    &::placeholder {
+      color: $medium-gray;
+      opacity: 1;
+    }
+
+    &[aria-invalid="true"] {
+      border-color: $error-color;
+      box-shadow: 0 0 0 3px lighten($error-color, 35%);
+    }
+  }
+
+  input[type="file"] {
+    padding: $spacing-sm;
+  }
+
+  small {
+    display: block;
+    margin-top: $spacing-xs;
+    color: $dark-gray;
+    font-size: 0.85em;
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: $spacing-sm;
+  margin-top: $spacing-lg;
+  padding-top: $spacing-md;
+  border-top: 1px solid $border-color;
+
+  button[type="button"] {
+    background-color: $light-gray;
+    color: $text-color;
+    border: 1px solid $border-color;
+
+    &:hover:not(:disabled) {
+      background-color: darken($light-gray, 5%);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px darken($light-gray, 10%);
+    }
+  }
+}

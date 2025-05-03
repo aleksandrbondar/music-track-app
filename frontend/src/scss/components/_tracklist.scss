@@ -1,0 +1,16 @@
+.track-list {
+  margin-top: $spacing-lg;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+[data-testid="loading-tracks"],
+.track-list>div:first-child:last-child {
+  padding: $spacing-xl;
+  text-align: center;
+  color: $dark-gray;
+  font-style: italic;
+  border: 1px dashed $border-color;
+  border-radius: $border-radius;
+}
